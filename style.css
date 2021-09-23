@@ -34,7 +34,9 @@ nav{
 }
 
 .upgrade{
-
+    padding: 10px 40px;
+    border: 1px solid white;
+    border-radius: 20px
 }
 
 .upgrade h5{

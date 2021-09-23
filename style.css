@@ -132,8 +132,8 @@ a{
     color: gray;
 }
 
-.options i{
-    font-size: 1.5rem;
+.options img{
+    width: 24px;
     vertical-align: middle;
 }
 
@@ -153,33 +153,38 @@ a{
     padding-bottom: 100px;
 }
 
-.arrow{
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    border: 1px solid gray;
-    border-radius: 50%;
-    font-size: 0.6rem;
-    padding: 0px 3px 1px;
-    margin-right: 5px;
-}
 
 .install{
     margin-bottom: 10px;
+}
+
+.install img{
+    width: 16px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.install .install_txt{
+    display: inline-block;
+}
+
+.username{
+    font-size: 0.9rem;
 }
 
 .user{
     padding-top: 10px;
 }
 .user_icon{
+    background-color: gray;
     border-radius: 50%;
-    color: gray;
-    font-size: 1.5rem;
     display: inline-block;
     width: 24px;
     height: 24px;
     text-align: center;
-    vertical-align: bottom;
+    vertical-align: middle;
+    background-image: url(./img/profile.svg);
+    background-position: center;
 }
 
 /********************

@@ -17,6 +17,12 @@ hr{
     border-color: gray;
 }
 
+.options h6,
+.menu h5,
+.tab li{
+    display: inline-block;
+}
+
 /**********************
         UTILITY
 ***********************/
@@ -37,6 +43,10 @@ hr{
 
 .white{
     color: white;
+}
+
+.gray{
+    color: gray;
 }
 
 /**********************
@@ -97,7 +107,7 @@ padding-right: 20px;
     padding-top: 15px;
 }
 
-.menu a{
+a{
     text-decoration: none;
     color: gray;
 }
@@ -107,10 +117,6 @@ padding-right: 20px;
     vertical-align: middle;
 }
 
-.options h6,
-.menu h5{
-    display: inline-block;
-}
 
 .lni{
     transform: rotate(90deg);
@@ -153,4 +159,39 @@ padding-right: 20px;
     height: 24px;
     text-align: center;
     vertical-align: bottom;
+}
+
+/********************
+        CONTENT
+*********************/
+
+.content{
+    width: calc(100% - 200px);
+    background-color: #141922;
+    height: 100vh;
+}
+
+.content .tab{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.content li{
+    padding-right: 15px;
+}
+
+.underline {
+       position: relative; 
+     }   
+
+.underline:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -3px; 
+    background: limegreen;
+    right: 25%;
+    width: 40%;
 }

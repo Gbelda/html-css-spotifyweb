@@ -13,6 +13,29 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+
+
+
+/**********************
+        UTILITY
+***********************/
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.menu, .content{
+    float: left;
+}
+
+.menu .white a{
+    color: white;
+}
+
+
+
 /**********************
           NAV
 *********************/
@@ -28,7 +51,6 @@ nav{
     padding: 0px 20px;
 }
 
-
 .logo img{
     width: 130px;
 }
@@ -41,4 +63,51 @@ nav{
 
 .upgrade h5{
     color: white;
+}
+
+
+
+
+/************************
+        SIDE MENU 
+************************/
+
+aside{
+    width: 200px;
+    height: 100vh;
+    background-color: black;
+}
+
+main .menu{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.options{
+    padding-top: 80px;
+    padding-left: 25px;
+}
+
+.options li{
+    list-style: none;
+    padding-top: 10px;
+}
+
+.options a{
+    text-decoration: none;
+    color: gray;
+}
+
+.options i{
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.options h6{
+    display: inline-block;
+}
+
+.lni{
+    transform: rotate(90deg);
 }

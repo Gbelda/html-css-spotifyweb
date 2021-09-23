@@ -34,6 +34,11 @@ hr{
 /**********************
         UTILITY
 ***********************/
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 
 .menu, .content{
     float: left;
@@ -55,6 +60,11 @@ hr{
     border-radius: 50%;
 }
 
+.txt_small{
+    font-weight: bold;
+    font-size: 0.6rem;
+
+}
 
 /**********************
           NAV
@@ -67,7 +77,7 @@ nav{
     height: 80px;
     background-color: rgba(0, 0, 0, 0.685);
     position: fixed;
-    width: 100%;
+    width: calc(100% - 20px);
     padding: 0px 20px;
     z-index: 100;
 }
@@ -294,15 +304,69 @@ a{
 .controls li,
 .playback li{
     list-style: none;
-    display: inline-block;
     vertical-align: middle;
     padding-right: 20px;
 }
 
 .controls i{
     font-size: 1.2rem;
+    margin: auto;
+}
+
+.controls ul,
+.playback ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 #play i{
     font-size: 2rem;
 }
+
+.time{
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    width: 500px;
+    justify-content: space-between;
+
+}
+
+.playback{
+    padding-right: 10px;
+}
+
+/******************
+MUSIC/VOLUME BAR
+*******************/
+
+.time .bar{
+    width: 400px;
+}
+
+.playback .bar{
+    width: 130px;
+}
+
+.bar div{
+    float: left;
+}
+
+.bar .point{
+    width: 20%;
+    background-color: lightgray;
+    border-radius: 2px;
+    height: 4px;
+}
+
+.bar .end{
+    width: 80%;
+    height: 4px;
+    background-color: gray;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+

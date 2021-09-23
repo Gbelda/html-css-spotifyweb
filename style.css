@@ -289,3 +289,8 @@ a{
 .heart{
     padding-right: 20px;
 }
+
+.controls li{
+    list-style: none;
+    display: inline-block;
+}

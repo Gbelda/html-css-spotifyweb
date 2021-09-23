@@ -25,6 +25,12 @@ hr{
     border-color: gray;
 }
 
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+
 .options h6,
 .menu h5,
 .tab li{
@@ -95,7 +101,6 @@ nav{
 
 
 
-
 /************************
         SIDE MENU 
 ************************/
@@ -127,21 +132,10 @@ padding-right: 20px;
     padding-top: 20px;
 }
 
-a{
-    text-decoration: none;
-    color: gray;
-}
-
 .options img{
     width: 24px;
     vertical-align: middle;
 }
-
-
-.lni{
-    transform: rotate(90deg);
-}
-
 
 .playlist i{
     font-size: 2.5rem;

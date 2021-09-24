@@ -72,6 +72,10 @@ a{
 
 }
 
+.hidden{
+    display: none;
+}
+
 /**********************
           NAV
 *********************/
@@ -79,17 +83,15 @@ a{
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 80px;
     background-color: rgba(0, 0, 0, 0.685);
     position: fixed;
-    width: calc(100% - 20px);
+    right: 20px;
+    width: calc(100% - 220px);
     padding: 0px 20px;
     z-index: 100;
-}
 
-.logo img{
-    width: 130px;
 }
 
 .upgrade{
@@ -107,11 +109,15 @@ nav{
 
 aside{
     width: 200px;
-    height: 100vh;
+    height: 100%;
     background-color: black;
-    padding-top: 50px;
     position: fixed;
     z-index: 90;
+}
+
+.logo img{
+    width: 170px;
+    padding: 20px 20px 0px;
 }
 
 main .menu{
@@ -196,15 +202,17 @@ padding-right: 20px;
     right: 0%;
 }
 
-.content .tab{
+.content .tab ul{
     padding-top: 100px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
 }
 
 .content li{
-    padding-right: 15px;
+    padding-right: 50px;
+    padding-bottom: 30px;
 }
 
 .underline {
@@ -222,7 +230,7 @@ padding-right: 20px;
 }
 
 .title{
-    padding: 60px 30px 0px;
+    padding: 40px 30px 0px;
 }
 
 .album{
@@ -233,9 +241,10 @@ padding-right: 20px;
 }
 
 .song{
-    width: 180px;
+    width: 170px;
     text-align: center;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .song h5{
@@ -251,29 +260,36 @@ padding-right: 20px;
 }
 
 .content .last{
-    padding-bottom: 100px;
+    padding-bottom: 70px;
 }
 
 /*********************
         FOOTER
 *********************/
-
-.foot_container{
-    height: 90px;
+footer{
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
     width: 100%;
     background-color: #282828;
-    position: fixed;
-    bottom: 0%;
-    z-index: 100;
+}
+
+.foot_container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
 }
 
 .playing{
     display: flex;
     align-items: center;
     padding-left: 20px;
+}
+
+.like_folder{
+display: flex;
 }
 
 .playing img{
@@ -304,12 +320,12 @@ padding-right: 20px;
 .playback li{
     list-style: none;
     vertical-align: middle;
-    padding-right: 20px;
+    padding: 0px 10px;
 }
 
 .controls i{
     font-size: 1.2rem;
-    margin: auto;
+
 }
 
 .controls ul,
@@ -317,6 +333,7 @@ padding-right: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
 }
 
@@ -328,21 +345,18 @@ padding-right: 20px;
     display: flex;
     padding-top: 10px;
     align-items: center;
-    width: 500px;
-    justify-content: space-between;
+    justify-content: center;
 
 }
 
-.playback{
-    padding-right: 10px;
-}
 
 /******************
 MUSIC/VOLUME BAR
 *******************/
 
 .time .bar{
-    width: 400px;
+    width: 500px;
+    padding: 0px 20px;
 }
 
 .playback .bar{
@@ -369,3 +383,94 @@ MUSIC/VOLUME BAR
 }
 
 
+/*****************
+    MEDIUM VIEW 
+******************/
+@media screen and (max-width: 1024px) {
+.time .bar{
+    width: 350px;
+    transition: ease 0.1s;
+}
+}
+
+
+
+/******************
+    SMALL VIEW
+******************/
+
+@media screen and (max-width: 768px) {
+
+.like_folder{
+    display: block;
+}
+
+.time .bar{
+    width: 150px;
+    transition: ease 0.1s;
+}
+
+.playback .bar{
+    width: 100px;
+}
+}
+
+
+/*******************
+   XTRA SMALL VIEW 
+********************/
+
+@media screen and (max-width: 425px) {
+    
+h5{
+    font-size: 0.6rem;
+}
+
+.big_logo{
+    display: none;
+}
+
+.logo .hidden,.small{
+    display: block;
+    width: 40px;
+    padding: 4px 8px 0px;
+}
+
+nav{
+    padding: 0px;
+}
+
+aside{
+    width: 40px;
+}
+
+.options{
+    padding-top: 0px;
+    padding-left: 8px;
+}
+
+.menu_container li{
+    padding-top: 10px;
+}
+
+.content{
+    width: calc(100% - 30px);
+    background-color: #141922;
+    position: absolute;
+    right: 0%;
+}
+
+.content li{
+padding-right: 20px;
+}
+
+
+.options h6,
+.playlist,
+.install .install_txt,
+.user h5,
+hr{
+    display: none;
+}
+
+}

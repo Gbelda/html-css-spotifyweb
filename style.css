@@ -274,7 +274,7 @@ flex-shrink: 0;
 }
 
 .song{
-    width: 170px;
+    width: calc(100% / 7);
     text-align: center;
     margin-right: 20px;
     margin-bottom: 20px;

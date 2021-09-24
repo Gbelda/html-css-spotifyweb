@@ -425,6 +425,10 @@ h5{
     font-size: 0.6rem;
 }
 
+h6{
+    font-size: 0.5rem;
+}
+
 .big_logo{
     display: none;
 }
@@ -474,7 +478,8 @@ aside{
 }
 
 .content li{
-padding-right: 20px;
+padding: 0px 10px 30px;
+text-align: center;
 }
 
 
@@ -484,6 +489,17 @@ padding-right: 20px;
 .user h5,
 hr{
     display: none;
+}
+
+.title{
+    font-size: 1.2rem;
+    padding: 0px 30px;
+
+}
+
+.song{
+    width: 150px;
+    margin-bottom: 10px;
 }
 
 }

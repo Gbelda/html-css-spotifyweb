@@ -386,6 +386,11 @@ MUSIC/VOLUME BAR
     MEDIUM VIEW 
 ******************/
 @media screen and (max-width: 1024px) {
+
+.song{
+    width: calc(100% / 5);
+}    
+
 .time .bar{
     width: 350px;
     transition: ease 0.1s;
@@ -400,6 +405,10 @@ MUSIC/VOLUME BAR
 
 @media screen and (max-width: 768px) {
 
+.song{
+    width: calc(100% / 2.5);
+}  
+    
 .like_folder{
     display: block;
 }
@@ -420,7 +429,9 @@ MUSIC/VOLUME BAR
 ********************/
 
 @media screen and (max-width: 425px) {
-    
+
+/***************************GENERAL********************************/
+
 h5{
     font-size: 0.6rem;
 }
@@ -439,6 +450,15 @@ h6{
     padding: 4px 8px 0px;
 }
 
+.options h6,
+.playlist,
+.install .install_txt,
+.user h5,
+hr{
+    display: none;
+}
+
+/******************************SIDE MENU**************************/
 nav{
     padding: 0px;
     width: calc(100% - 60px);
@@ -466,6 +486,8 @@ aside{
     padding-top: 10px;
 }
 
+/*****************************MAIN CONTENT*****************************/
+
 .upgrade{
     padding: 10px 30px;
 }
@@ -483,14 +505,6 @@ text-align: center;
 }
 
 
-.options h6,
-.playlist,
-.install .install_txt,
-.user h5,
-hr{
-    display: none;
-}
-
 .title{
     font-size: 1.2rem;
     padding: 0px 30px;
@@ -498,8 +512,67 @@ hr{
 }
 
 .song{
-    width: 150px;
+    width: calc(100% / 2.5);
     margin-bottom: 10px;
+}
+
+/*******************************FOOTER********************************/
+.playing img{
+    width: 30px;
+}
+
+.playing .band_name{
+    font-size: 0.6rem;
+}
+
+.playing .song_name{
+    font-size: 0.5rem;
+}
+
+.playing{
+    padding-left: 8px;
+}
+
+.like_folder i{
+    font-size: 0.8rem;
+}
+
+
+.controls i{
+    font-size: 0.8rem;
+}
+
+#play i{
+    font-size: 1.2rem;
+}
+
+.playing .song_name,
+.playing .band_name{
+    padding-right: 10px;
+}
+
+.time .bar{
+    width: 120px;
+    transition: ease 0.1s;
+    padding: 0px 5px;
+}
+
+.txt_small{
+    font-size: 0.5rem;
+}
+
+.playback i{
+    font-size: 0.6rem;
+    vertical-align: middle;
+}
+
+.playback li{
+    padding: 0px 5px;
+}
+
+.playback .bar{
+    width: 67px;
+    padding-right: 5px;
 }
 
 }

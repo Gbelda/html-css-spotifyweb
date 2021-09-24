@@ -208,10 +208,6 @@ flex-shrink: 0;
     overflow-y: auto;
 }
 
-.scroll ul{
-    display: flex;
-    flex-direction: column;
-}
 
 .scroll li{
     min-height: 29px;

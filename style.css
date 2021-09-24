@@ -124,7 +124,6 @@ main .menu{
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-padding-right: 20px;
 }
 
 .options,
@@ -438,6 +437,7 @@ h5{
 
 nav{
     padding: 0px;
+    width: calc(100% - 60px);
 }
 
 aside{
@@ -449,8 +449,21 @@ aside{
     padding-left: 8px;
 }
 
+.user_app{
+    padding-left: 8px;
+    padding-bottom: 100px;
+}
+
+.install img{
+    margin-left: 3px;
+}
+
 .menu_container li{
     padding-top: 10px;
+}
+
+.upgrade{
+    padding: 10px 30px;
 }
 
 .content{

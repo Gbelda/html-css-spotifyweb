@@ -62,8 +62,8 @@ section{
     align-items: center;
     justify-content: flex-end;
     height: 70px;
-    background-color: transparent;
-    position: fixed;
+    background-color: #141922;
+    position: absolute;
     right: 20px;
     width: calc(100% - 220px);
     z-index: 100;
@@ -77,3 +77,106 @@ section{
     background-color: black;
 }
 
+.hero{
+    width: 384px;
+    height: 220px;
+    background-color: rgb(128, 89, 201);
+    margin: 20px 15px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero_title{
+    font-size: 2rem;
+    padding: 20px;
+    color: white;
+}
+
+.genre{
+    width: calc(100% / 7);
+    background-color: white;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.genre:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.hero img,
+.genre img{
+    position: absolute;
+    width: 45%;
+    transform: rotate(30deg);
+    bottom: -10%;
+    right: -6%;
+}
+
+.genre_index{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 125px;
+}
+
+.podcast{
+    background-color: teal;
+}
+
+.genre_title{
+    font-size: 1.5rem;
+    color: white;
+    padding: 20px;
+    position: absolute;
+}
+
+.made_for_you{
+    background-color: cornflowerblue;
+}
+
+.charts{
+    background-color: darkkhaki;
+}
+
+.new_release{
+    background-color: darkseagreen;
+}
+
+.discover{
+    background-color: darkviolet;
+}
+
+.concert{
+    background-color: deepskyblue;
+}
+
+.electro{
+    background-color: goldenrod;
+}
+
+.hiphop{
+    background-color: hotpink;
+}
+
+.mood{
+    background-color: lightseagreen;
+}
+
+.chill{
+    background-color: lightskyblue;
+}
+
+.RandB{
+    background-color: mediumvioletred;
+}
+
+.indie{
+    background-color: olivedrab;
+}
+
+.soul{
+    background-color: orange;
+}

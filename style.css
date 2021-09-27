@@ -687,3 +687,39 @@ text-align: center;
 }
 
 }
+
+@media screen and (max-width: 375px) {
+
+.playback ul{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.playback .bar{
+
+    visibility: hidden;
+
+}
+
+}
+
+@media screen and (max-width: 320px) {
+    
+.album{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}    
+
+.song{
+    width: calc(100% / 1.5);
+}  
+
+.album h5{
+    font-size: 0.9rem;
+}
+
+.album h6{
+    font-size: 0.7rem;
+}
+}

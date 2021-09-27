@@ -1,6 +1,6 @@
-/********************
-        GENERAL
-*******************/
+/********************************************
+                    GENERAL
+*******************************************/
 
 *{
     box-sizing: border-box;
@@ -41,9 +41,9 @@ a{
     display: inline-block;
 }
 
-/**********************
-        UTILITY
-***********************/
+/*************************************************
+                      UTILITY
+*************************************************/
 .clearfix::after{
     content: "";
     display: table;
@@ -80,9 +80,9 @@ a{
     display: none;
 }
 
-/**********************
-          NAV
-*********************/
+/****************************************************
+                         NAV
+****************************************************/
 
 nav{
     display: flex;
@@ -106,9 +106,9 @@ nav{
 
 
 
-/************************
-        SIDE MENU 
-************************/
+/************************************************
+                     SIDE MENU 
+************************************************/
 
 aside{
     width: 200px;
@@ -128,6 +128,11 @@ display: flex;
 flex-direction: column;
 /* justify-content: space-between; */
 flex-shrink: 0;
+}
+
+.list li,
+.options li{
+    list-style: none;
 }
 
 .create{
@@ -153,9 +158,6 @@ flex-shrink: 0;
     padding-top: 15px;
 }
 
-.menu_container li{
-    list-style: none;
-}
 
 .options img{
     width: 24px;
@@ -169,7 +171,7 @@ flex-shrink: 0;
 
 .user_app{
     padding-left: 10px;
-    padding-bottom: 177px;
+    padding-bottom: 120px;
     background-color: black;
     overflow: hidden;
 }
@@ -210,7 +212,7 @@ flex-shrink: 0;
 
 .playlist .list{
     overflow-y: auto;
-    height: calc(100% - 60px);
+    height: calc(100% - 70px);
 }
 
 .playlist{
@@ -219,9 +221,9 @@ flex-shrink: 0;
 }
 
 
-/********************
-        CONTENT
-*********************/
+/**********************************************
+                   CONTENT
+**********************************************/
 .container{
     height: 100vh;
     overflow: auto;
@@ -295,9 +297,9 @@ flex-shrink: 0;
     padding-bottom: 70px;
 }
 
-/*********************
-        FOOTER
-*********************/
+/********************************************
+                    FOOTER
+*******************************************/
 footer{
     height: 80px;
     position: absolute;
@@ -382,9 +384,9 @@ display: flex;
 }
 
 
-/******************
-MUSIC/VOLUME BAR
-*******************/
+/*******************************************
+                MUSIC/VOLUME BAR
+******************************************/
 
 .time .bar{
     width: 500px;
@@ -415,9 +417,59 @@ MUSIC/VOLUME BAR
 }
 
 
-/*****************
-    MEDIUM VIEW 
-******************/
+
+/************************************************
+                       EFFECTS
+*************************************************/
+
+.upgrade:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+li:hover a,
+.create:hover a,
+.install:hover a,
+.song_name:hover,
+.like_folder div:hover i{
+    color: white;
+}
+
+.song_name:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.song_img{
+    position: relative;
+    display: flex;
+}
+
+.overlay{
+    position: absolute;
+    color: white;
+    visibility:hidden;
+    font-size: 4rem;
+    background-color: rgba(0, 0, 0, 0.356);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.song_img:hover .overlay{
+visibility: visible;
+cursor: pointer;
+}
+
+.round.overlay{
+    border-radius: 50%;
+}
+
+/*********************************************
+                     MEDIUM VIEW 
+*********************************************/
 @media screen and (max-width: 1024px) {
 
 .song{
@@ -432,9 +484,9 @@ MUSIC/VOLUME BAR
 
 
 
-/******************
-    SMALL VIEW
-******************/
+/*********************************************
+                     SMALL VIEW
+*********************************************/
 
 @media screen and (max-width: 768px) {
 
@@ -457,9 +509,9 @@ MUSIC/VOLUME BAR
 }
 
 
-/*******************
-   XTRA SMALL VIEW 
-********************/
+/***********************************************
+                XTRA SMALL VIEW 
+**********************************************/
 
 @media screen and (max-width: 425px) {
 
@@ -504,18 +556,19 @@ aside{
 .options{
     padding-top: 0px;
     padding-left: 8px;
+    height: 100%;
 }
 
 .user_app{
     padding-left: 8px;
-    padding-bottom: 100px;
+    height: 157px;
 }
 
 .install img{
     margin-left: 3px;
 }
 
-.menu_container li{
+.list li{
     padding-top: 10px;
 }
 

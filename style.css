@@ -220,6 +220,21 @@ flex-shrink: 0;
     overflow: hidden;
 }
 
+.highlight {
+       position: relative; 
+     }   
+
+.highlight:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: 5px;
+    background: rgb(157, 255, 0);
+    left: -33%;
+    width: 40%;
+    transform: rotate(90deg);
+}
+
 
 /**********************************************
                    CONTENT

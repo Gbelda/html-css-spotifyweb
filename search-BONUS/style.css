@@ -7,13 +7,16 @@ input{
 .profile{
     display: flex;
     justify-content: space-between;
-    width: 100%;
     align-items: center;
+    width: 100%;
 }
 
 .search{
     display: flex;
     align-items: center;
+    flex-grow: 1;
+    width: 70%;
+    overflow: hidden;
 }
 
 .search input{
@@ -21,12 +24,14 @@ input{
     border: none;
     font-size: 0.9rem;
     vertical-align: middle;
-    padding: 10px 150px 10px 5px;
+    padding: 10px 0px 10px 5px;
 }
 
 .search_bar{
     background-color: white;
     border-radius: 20px;
+    min-width: 518px;
+
 }
 
 .search_bar img{
@@ -75,6 +80,7 @@ section{
     border-radius: 20px;
     border-color: transparent;
     background-color: black;
+    min-width: 123px
 }
 
 .hero{
@@ -179,4 +185,54 @@ section{
 
 .soul{
     background-color: orange;
+}
+
+
+/*********************************************
+                     MEDIUM VIEW 
+*********************************************/
+
+@media screen and (max-width: 1024px) {
+    
+    .genre{
+        width: calc(100% / 5);
+    }
+}
+
+
+/*********************************************
+                     SMALL VIEW
+*********************************************/
+
+
+@media screen and (max-width: 768px) {
+
+    .genre{
+        width: calc(100% / 3.5);
+    }
+
+    .chev{
+        display: none;
+    }
+
+    .search_bar{
+        min-width: 400px;
+    }
+}
+
+/***********************************************
+                XTRA SMALL VIEW 
+**********************************************/
+
+@media screen and (max-width: 425px) {
+
+
+    .search{
+        justify-content: flex-start;
+    }
+
+    section{
+        left: 45px;
+    }
+    
 }

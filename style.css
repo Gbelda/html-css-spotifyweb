@@ -258,7 +258,7 @@ flex-shrink: 0;
     content: '';
     height: 2px;
     bottom: -3px; 
-    background: limegreen;
+    background: rgb(157, 255, 0);
     right: 25%;
     width: 40%;
 }
@@ -406,6 +406,8 @@ display: flex;
     background-color: lightgray;
     border-radius: 2px;
     height: 4px;
+    position: relative;
+
 }
 
 .bar .end{
@@ -422,7 +424,8 @@ display: flex;
                        EFFECTS
 *************************************************/
 
-.upgrade:hover{
+.upgrade:hover,
+.fa-play-circle:hover{
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -431,12 +434,14 @@ li:hover a,
 .create:hover a,
 .install:hover a,
 .song_name:hover,
-.like_folder div:hover i{
+.like_folder div:hover i,
+.bar:hover,
+.song_img:hover .overlay{
     color: white;
+    cursor: pointer;
 }
 
 .song_name:hover{
-    cursor: pointer;
     text-decoration: underline;
 }
 
@@ -458,13 +463,29 @@ li:hover a,
     justify-content: center;
 }
 
-.song_img:hover .overlay{
+.song_img:hover .overlay,
+.bar:hover .fa-circle{
 visibility: visible;
-cursor: pointer;
 }
 
 .round.overlay{
     border-radius: 50%;
+}
+
+.bar:hover .point{
+    background-color: rgb(157, 255, 0);
+}
+
+.fa-circle{
+    font-size: 1rem;
+    position: absolute;
+    top: -140%;
+    right: -50%;
+    visibility: hidden;
+}
+
+.fa-circle.song_duration{
+        right: -10%;
 }
 
 /*********************************************
@@ -659,6 +680,10 @@ text-align: center;
 .playback .bar{
     width: 67px;
     padding-right: 5px;
+}
+
+.fa-circle.vol{
+    top: -40%;
 }
 
 }

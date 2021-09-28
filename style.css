@@ -162,7 +162,7 @@ aside{
 .user_app{
     padding-left: 10px;
     background-color: black;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 
@@ -204,7 +204,7 @@ aside{
 }
 
 .playlist{
-    height: 100%;
+    height: 70%;
     overflow: hidden;
 }
 
@@ -233,7 +233,6 @@ main{
 }
 
 .container{
-    overflow: auto;
     height: 100vh;
 }
 
@@ -242,6 +241,7 @@ main{
     background-color: #141922;
     float: left;
     height: 100%;
+    overflow: auto;
 }
 
 .content .tab ul{
@@ -301,12 +301,8 @@ main{
 
 .song img{
     width: 100%;
-    position: relative;
 }
 
-.last{
-    padding-bottom: 80px;
-}
 /********************************************
                     FOOTER
 *******************************************/
@@ -314,7 +310,7 @@ footer{
     height: 80px;
     width: 100%;
     background-color: #282828;
-    position: relative;
+    z-index: 100;
 }
 
 .foot_container{

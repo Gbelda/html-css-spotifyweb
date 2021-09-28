@@ -23,6 +23,7 @@ h6{
 body{
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
+    height: 100vh;
 }
 
 hr{
@@ -41,6 +42,7 @@ a{
     display: inline-block;
 }
 
+
 /*************************************************
                       UTILITY
 *************************************************/
@@ -48,10 +50,6 @@ a{
     content: "";
     display: table;
     clear: both;
-}
-
-.menu, .content{
-    float: left;
 }
 
 .menu .white a{
@@ -111,23 +109,15 @@ nav{
 ************************************************/
 
 aside{
-    width: 200px;
-    height: 100%;
+    width: 200px; 
     background-color: black;
-    position: fixed;
-    z-index: 90;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo img{
     width: 150px;
     padding: 20px 10px 0px;
-}
-
-main .menu{
-display: flex;
-flex-direction: column;
-/* justify-content: space-between; */
-flex-shrink: 0;
 }
 
 .list li,
@@ -171,9 +161,8 @@ flex-shrink: 0;
 
 .user_app{
     padding-left: 10px;
-    padding-bottom: 120px;
     background-color: black;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -196,7 +185,7 @@ flex-shrink: 0;
 }
 
 .user{
-    padding-top: 10px;
+    padding: 10px 0px;
 }
 .user_icon{
     background-color: gray;
@@ -212,7 +201,6 @@ flex-shrink: 0;
 
 .playlist .list{
     overflow-y: auto;
-    height: calc(100% - 70px);
 }
 
 .playlist{
@@ -239,16 +227,21 @@ flex-shrink: 0;
 /**********************************************
                    CONTENT
 **********************************************/
+main{
+    height: calc(100% - 80px);
+    display: flex;
+}
+
 .container{
-    height: 100vh;
     overflow: auto;
+    height: 100vh;
 }
 
 .content{
     width: calc(100% - 200px);
     background-color: #141922;
-    position: absolute;
-    right: 0%;
+    float: left;
+    height: 100%;
 }
 
 .content .tab ul{
@@ -291,6 +284,7 @@ flex-shrink: 0;
     flex-wrap: wrap;
     padding-left: 20px;
     padding-top: 40px;
+    
 }
 
 .song{
@@ -298,6 +292,7 @@ flex-shrink: 0;
     text-align: center;
     margin-right: 20px;
     margin-bottom: 20px;
+
 }
 
 .song h5{
@@ -306,22 +301,20 @@ flex-shrink: 0;
 
 .song img{
     width: 100%;
+    position: relative;
 }
 
-.content .last{
-    padding-bottom: 70px;
+.last{
+    padding-bottom: 80px;
 }
-
 /********************************************
                     FOOTER
 *******************************************/
 footer{
     height: 80px;
-    position: absolute;
-    bottom: 0;
-    z-index: 100;
     width: 100%;
     background-color: #282828;
+    position: relative;
 }
 
 .foot_container{
@@ -421,7 +414,6 @@ display: flex;
     background-color: lightgray;
     border-radius: 2px;
     height: 4px;
-    position: relative;
 
 }
 
@@ -461,12 +453,11 @@ li:hover a,
 }
 
 .song_img{
-    position: relative;
     display: flex;
+    position: relative;
 }
 
 .overlay{
-    position: absolute;
     color: white;
     visibility:hidden;
     font-size: 4rem;
@@ -476,6 +467,7 @@ li:hover a,
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
 }
 
 .song_img:hover .overlay,
@@ -617,8 +609,6 @@ aside{
 .content{
     width: calc(100% - 30px);
     background-color: #141922;
-    position: absolute;
-    right: 0%;
 }
 
 .content li{
